@@ -1305,7 +1305,7 @@ html {
   margin-left: auto;
   width: 160px;
   height: 80px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid #efefef;
