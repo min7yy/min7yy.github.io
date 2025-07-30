@@ -1303,24 +1303,10 @@ html {
 
 .experience__logo--right {
   margin-left: auto;
-  width: 80px;
+  width: 160px;
   height: 80px;
   object-fit: cover;
-  border-radius: 16px; /* For rounded edges */
+  border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid #efefef;
-}
-
-/* Responsive: Adjust for smaller screens */
-@media (max-width: 600px) {
-  .experience__logo--right {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-  }
-  .experience__header {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
 }
