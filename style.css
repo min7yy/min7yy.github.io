@@ -1292,7 +1292,7 @@ html {
   .section {
     page-break-inside: avoid;
   }
-  /* Added css for images*/
+}
 .experience__header {
   display: flex;
   align-items: center;
@@ -1302,11 +1302,14 @@ html {
 }
 
 .experience__logo {
-  margin-left: auto;
   width: 160px;
-  height: 80px;
+  height: auto;
+  aspect-ratio: 2 / 1;
   object-fit: contain;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid #efefef;
+  background: #fff;
+  display: block;
+  margin-left: auto;
 }
