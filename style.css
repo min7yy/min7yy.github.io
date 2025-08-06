@@ -1346,3 +1346,9 @@ html {
   opacity: 0.8;
   border-radius: 2px;
 }
+.footer__watermark {
+  text-align: center;
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+}
