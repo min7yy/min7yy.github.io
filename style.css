@@ -297,6 +297,33 @@
   --color-info-rgb: var(--color-slate-500-rgb);
 }
 
+/* Force all backgrounds to solid black */
+:root {
+  --color-background: #000;
+  --color-surface: #000;
+  --color-bg-1: #000;
+  --color-bg-2: #000;
+  --color-bg-3: #000;
+  --color-bg-4: #000;
+  --color-bg-5: #000;
+  --color-bg-6: #000;
+  --color-bg-7: #000;
+  --color-bg-8: #000;
+}
+
+body,
+html {
+  background: #000 !important;
+  background-color: #000 !important;
+}
+
+.header,
+.section,
+.skills__category,
+.about__info-item,
+.experience__card,
+.education,
+
 /* Base styles */
 html {
   font-size: var(--font-size-base);
@@ -822,7 +849,7 @@ select.form-control {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--color-bg-1), var(--color-bg-3));
+  background: #000;
   padding-top: 80px;
 }
 
