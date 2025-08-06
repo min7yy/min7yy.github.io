@@ -1041,14 +1041,19 @@ select.form-control {
   max-width: 340px;
   padding: 20px 20px 20px 16px;
   gap: 18px;
-  /* Remove border color transition and hover effect */
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-.experience__card:hover {
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  /* Remove border color change on hover */
-  border-color: var(--color-border, #e5e7eb);
+.experience__card:hover,
+.experience__card:focus-visible {
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.15);
+  border-color: var(--color-primary, #3b82f6);
+  transform: translateY(-4px) scale(1.025);
+  text-decoration: none;
+  outline: none;
 }
 
 .experience__logo-wrap {
