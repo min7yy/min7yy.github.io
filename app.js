@@ -100,6 +100,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
+
+        // If at (or near) the bottom of the page, highlight Recommendations
+        if (
+          window.innerHeight + window.scrollY >= document.body.offsetHeight - 2
+        ) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          const recLink = document.querySelector('.nav__link[href="#recommendations"]');
+          if (recLink) recLink.classList.add('active');
+        }
     }
 
     // Header scroll effect
