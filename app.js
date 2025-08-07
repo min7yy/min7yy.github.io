@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for scroll animations
-    const animatedElements = document.querySelectorAll('.card, .skills__category, .about__content');
+    const animatedElements = document.querySelectorAll('.card, .skills__category, .about__content, .experience__grid, .recommendations__list');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const ctx = canvas.getContext('2d');
     const particles = [];
-    const PARTICLE_COUNT = 80;
+    const PARTICLE_COUNT = 200;
 
     function randomBetween(a, b) {
         return a + Math.random() * (b - a);
